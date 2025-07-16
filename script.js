@@ -46,7 +46,7 @@ function App() {
         <div className="container">
             <header className="header">
                 <h1>بوابة الملاحظات المؤسسية</h1>
-                <p>نقدر رأيك! استخدم هذه البوابة لتقديم الشكاوى والاقتراحات لتحسين بيئة العمل.</p>
+                <p>نقدر رأيك! استخدم هذه البوابة لتقديم الشكاوى والاقتراحات لتحسين بيئة عمل شركة رامة.</p>
             </header>
             <main className="main-content">
                 <div className="form-container">
