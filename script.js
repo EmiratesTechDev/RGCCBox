@@ -112,7 +112,7 @@ function FeedbackForm({ onSubmit }) {
         }
     };
 
-    const departments = ['العامة', 'الموارد البشرية', 'تقنية المعلومات', 'المالية', 'التسويق', 'خدمة العملاء', 'العمليات'];
+        const departments = ['العامة', 'الموارد البشرية', 'تقنية المعلومات', 'المشتريات', 'التطوير', 'الوجيستك', 'الحسابات', 'الاستقبال', 'شخص معين'];
 
     return (
         <form onSubmit={handleSubmit}>
@@ -130,11 +130,9 @@ function FeedbackForm({ onSubmit }) {
             <div className="form-group">
                 <label htmlFor="department">القسم المعني</label>
                 <select id="department" className="select" value={department} onChange={(e) => setDepartment(e.target.value)}>
-                    <option value="العامة">العامة</option>
-                    <option value="الموارد البشرية">الموارد البشرية</option>
-                    <option value="تقنية المعلومات">تقنية المعلومات</option>
-                    <option value="العمليات">العمليات</option>
-                    <option value="التسويق">التسويق</option>
+                    {departments.map(dept => (
+                        <option key={dept} value={dept}>{dept}</option>
+                    ))}
                 </select>
             </div>
             <div className="form-group">
